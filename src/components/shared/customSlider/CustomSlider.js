@@ -18,10 +18,10 @@ const CustomSlider = ({min, max, step, value, setValue}) => {
         max={max}
         thumbClassName="slider-thumb"
         trackClassName="slider-track"
-        renderThumb={(props, state) => 
+        renderThumb={(props, state) =>
           <div {...props}>
-            <FaAngleLeft className="sidebar-icon"/>
-            <FaAngleRight className="sidebar-icon"/>
+            <FaAngleLeft className="sidebar-icon" style={{color: '#a9a9a99c'}}/>
+            <FaAngleRight className="sidebar-icon" style={{color: '#a9a9a99c'}}/>
           </div>
         }
       />

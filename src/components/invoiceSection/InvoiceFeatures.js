@@ -29,7 +29,7 @@ const InvoiceFeatures = ({ }) => {
             <Row className="feature-list">
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item vector50_1_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
+                    <img className="Vector46Selected" src={Vector46} alt="Vector46Selected" />
                     <img className="hover-background vector50_1" src={Vector50_1} alt="Vector50_1" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -43,7 +43,7 @@ const InvoiceFeatures = ({ }) => {
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item vector50_2_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
+                    <img className="Vector46Selected" src={Vector46} alt="Vector46Selected" />
                     <img className="hover-background vector50_2" src={Vector50_2} alt="Vector50_2" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -57,7 +57,7 @@ const InvoiceFeatures = ({ }) => {
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item vector50_3_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
+                    <img className="Vector46Selected" src={Vector46} alt="Vector46Selected" />
                     <img className="hover-background vector50_3" src={Vector50_3} alt="Vector50_3" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -71,7 +71,7 @@ const InvoiceFeatures = ({ }) => {
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_4_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
+                    <img className="Vector46Selected" src={Vector46} alt="Vector46Selected" />
                     <img className="hover-background vector50_4" src={Vector50_4} alt="Vector50_4" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -85,7 +85,7 @@ const InvoiceFeatures = ({ }) => {
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_5_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
+                    <img className="Vector46Selected" src={Vector46} alt="Vector46Selected" />
                     <img className="hover-background vector50_5" src={Vector50_5} alt="Vector50_5" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
@@ -99,7 +99,7 @@ const InvoiceFeatures = ({ }) => {
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_6_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
-                    <img className="hover-background vector50_6" src={Vector50_6} alt="Vector50_6" />
+                    <img className="hover-background vector50_6" src={Vector46} alt="Vector50_6" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <span className="feature-item-title">API & Webhooks</span>

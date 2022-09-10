@@ -141,8 +141,8 @@ $focus-color: #ff0;
     .toggle-switch-label {
       height: 40px;
       font-size: 12px !important;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding-left: 15 !important;
+      padding-right: 15 !important;
       .toggle-switch-inner::after, .toggle-switch-inner::before {
         line-height: 40px !important;
         font-size: 12px !important;
@@ -151,6 +151,13 @@ $focus-color: #ff0;
         line-height: 35px !important;
         font-size: 12px !important;
       }
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .toggle-switch-label {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
   }
 }

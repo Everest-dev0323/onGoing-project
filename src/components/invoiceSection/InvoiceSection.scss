@@ -531,23 +531,31 @@
 
             .item-background {
                 position: absolute;
-                padding: 33.5px 13px;
+                // padding: 33.5px 13px;
                 bottom: 0;
                 right: 0;
-                width: 100%;
-                height: 100%;
+                width: 93%;
+                height: 90%;
                 z-index: -2;
             }
 
             .Vector46Selected {
                 position: absolute;
                 display: none;
-                padding: 30.5px 0px 3px 0px;
+                // padding: 30.5px 0px 3px 0px;
                 bottom: 0;
                 right: 0;
-                width: 100%;
-                height: 100%;
+                width: 93%;
+                height: 90%;
                 z-index: -2;
+            }
+
+            @media screen and (max-width:575px) {
+                margin-bottom: 20px;
+                .item-background, .Vector46Selected {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
             }
 
             .hover-background {
@@ -591,6 +599,9 @@
                 .item-description {
                     font-size: 16px;
                     padding-bottom: 20px;
+                    @media screen and (max-width: 575px) {
+                        padding-bottom: 60px;
+                    }
                 }
 
                 @media screen and (max-width: 1284px) {

@@ -31,6 +31,10 @@
         .slider-thumb {
             height: 30px;
             width: 30px;
+            svg {
+                font-size: 15px;
+                margin-top: -7px;
+            }
         }
     }
 
