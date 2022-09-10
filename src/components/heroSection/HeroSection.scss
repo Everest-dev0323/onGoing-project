@@ -1,0 +1,267 @@
+.hero-section {
+    width: 100%;
+    height: calc( 100vh - 81px);
+    position: relative;
+    overflow: hidden;
+
+    .section-content {
+        margin: 3px;
+
+        .title-box {
+            margin-top: 10%;
+            margin-bottom: 15px;
+            top: 204px;
+            font-family: 'Lato';
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #3B3C98;
+        }
+
+        .fetchie-card {
+            max-width: 310px;
+
+            img {
+                width: 90px;
+                height: 83px;
+            }
+
+            .fetchie-btn {
+                font-family: 'Lato';
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 50px;
+                outline: none ;
+                box-shadow: none;
+                background: #FFFFFF;
+                border-radius: 13px;
+            }
+
+            .invoice-btn:hover, .invoice-btn:focus {
+                background-color: #E2F5FF;
+                border-color: #E2F5FF;
+                color: black;
+            }
+
+            .invoice-btn.active, .invoice-btn:active {
+                background-color: #D0EFFF;
+                border-color: #D0EFFF;
+                color: black;
+            }
+
+            .ecommerce-btn:hover, .ecommerce-btn:focus {
+                background-color: #FFFCF0;
+                border-color: #FFFCF0;
+                color: black;
+            }
+
+            .ecommerce-btn.active, .ecommerce-btn:active {
+                background-color: #FFF8DC;
+                border-color: #FFF8DC;
+                color: black;
+            }
+
+            .btn-label {
+                font-family: 'Lato';
+                font-size: 20px;
+                line-height: 125%;
+                text-align: left;
+                padding: 0 20px;
+            }
+
+            .fetchie-explanation {
+                font-size: 14px;
+                padding: 5px;
+                text-align: center;
+            }
+
+            .read-more {
+                padding-left: 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .section-content {
+
+            .title-box {
+                font-size: 36px;
+            }
+
+            .fetchie-card {
+                .btn-label {
+                    font-size: 16px;
+                }
+
+                .fetchie-btn.active, .fetchie-btn:active, .fetchie-btn:hover, .fetchie-btn:focus {
+                    background-color: #D0EFFF;
+                    border-color: #D0EFFF;
+                    color: black;
+                }
+
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .section-content {
+
+            .title-box {
+                font-size: 24px;
+            }
+
+            .fetchie-card {
+                .btn-label {
+                    font-size: 16px;
+                }
+
+                .fetchie-btn.active, .fetchie-btn:active, .fetchie-btn:hover, .fetchie-btn:focus {
+                    background-color: #D0EFFF;
+                    border-color: #D0EFFF;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        height: auto !important;
+        .lottie-dog {
+            display: none;
+        }
+        .title-box div{
+            padding: 0 10px;
+        }
+
+        .fetchie-card button {
+            width: 100% !important;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    // backgroung-image
+    .lottie-dog {
+        position: absolute;
+        left: 62px;
+        bottom: 0;
+    }
+    .hero-section-imgs {
+        position: absolute;
+
+    }
+
+    .background-rectangle {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ellipse24 {
+        height: 713px;
+        width: 100%;
+        left: 124px;
+        top: -379px;
+        border-radius: 0px;
+        background: #03D0FF;
+        opacity: 0.12;
+        filter: blur(620px);
+    }
+
+    .group {
+        height: 324px;
+        width: 128px;
+        right: 0px;
+        bottom: 65px;
+        border-radius: 0px;
+    }
+
+    .group2 {
+        height: 86px;
+        width: 135px;
+        right: 7px;
+        bottom: 80px;
+        border-radius: 0px;
+    }
+
+    .polygon8 {
+        height: 23px;
+        width: 15px;
+        right: 230px;
+        bottom: 183px;
+        border-radius: 3px;
+        color: #FDC629;
+    }
+
+    .polygon9 {
+        height: 13px;
+        width: 18px;
+        left: 262px;
+        top: 202px;
+        border-radius: 3px;
+        color: #FF7D89;
+    }
+
+    .polygon10 {
+        height: 11px;
+        width: 17px;
+        right: 94px;
+        top: 322px;
+        border-radius: 3px;
+        color: #03D0FF;
+    }
+
+    .polygon11 {
+        height: 25px;
+        width: 15px;
+        left: 231px;
+        top: 506px;
+        border-radius: 3px;
+        color: #59C891;
+    }
+
+    .vector11 {
+        height: 14px;
+        width: 10px;
+        right: 272px;
+        top: 196px;
+        border-radius: 7px;
+        color: #59C891;
+    }
+
+    .vector12 {
+        height: 11px;
+        width: 9px;
+        left: 138px;
+        top: 349px;
+        border-radius: 7px;
+        color: #03D0FF;
+    }
+
+    .vector31 {
+        height: 30px;
+        width: 172px;
+        left: -11px;
+        top: 260px;
+        border-radius: 0px;
+        color: #D5F4FF;
+    }
+
+    .vector32 {
+        height: 30px;
+        width: 198px;
+        right: 0;
+        top: 209px;
+        border-radius: 0px;
+        color: #D5F4FF;
+    }
+
+    .vector33 {
+        height: 19px;
+        width: 101px;
+        right: 167px;
+        top: 354px;
+        border-radius: 0px;
+        color: white;
+    }
+}

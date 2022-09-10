@@ -1,0 +1,29 @@
+/* make the customizations */
+$theme-colors: (
+        "info": tomato,
+        "danger": teal
+);
+
+@font-face {
+        font-family: 'Lato';
+        font-style: 'normal';
+        src: local('Lato'),
+        url(./assets/fonts/Lato/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face {
+        font-family: 'Gilroy';
+        font-style: 'normal';
+        src: local('Gilroy'),
+        url(./assets/fonts/Gilroy/Gilroy-Regular.ttf) format('truetype');
+}
+
+@font-face {
+        font-family: 'Gilroy-semibold';
+        font-style: 'normal';
+        src: local('Gilroy'),
+        url(./assets/fonts/Gilroy/Gilroy-SemiBold.ttf) format('truetype');
+}
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";

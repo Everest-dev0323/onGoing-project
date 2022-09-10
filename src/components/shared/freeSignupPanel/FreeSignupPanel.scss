@@ -1,0 +1,134 @@
+.signup-panel {
+    border-radius: 10px;
+    position: relative;
+    background-color: transparent;
+
+    .free-signup-imgs {
+        position: absolute;
+        @media screen and (max-width: 575px) {
+            padding: 0 !important;
+            border-radius: 20pxp;
+        }
+    }
+
+    .signup-info {
+        padding: 15px 0px 15px 30px;
+        z-index: 2;
+        color: white;
+        background-color: transparent;
+
+        .signup-description {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .signup-description-2 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 992px) {
+            .signup-description {
+                font-size: 16px;
+            }
+
+            .signup-description-2 {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .signup-form-out {
+        z-index: 2 ;
+        align-self: center;
+        background-color: transparent;
+
+        .signup-form-main {
+            width: 100%;
+            border: 8px;
+            margin: 9px 12px;
+            padding: 13px 17px 13px 41px;
+
+            .signup-form-input {
+                width: 100%;
+            }
+
+            .email-input {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+            }
+
+            .submit-btn {
+                width: 100%;
+                color: white;
+                background-color: #FF7D89;
+                margin-left: 0;
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+                .email-input {
+                    border-radius: 10px;
+                    width: 100%;
+                    margin-top: 5px;
+                }
+
+                .submit-btn {
+                    border-radius: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    // pngs
+    .rectangle94, .mask-group {
+        width: 100%;
+        height: 100%;
+    }
+
+    .polygon18 {
+        z-index: 2;
+        height: 8px;
+        width: 30px;
+        right: 26px;
+        bottom: 12px;
+        border-radius: 3px;
+    }
+
+    .polygon19 {
+        z-index: 2;
+        height: 12px;
+        width: 32px;
+        left: 50%;
+        top: 40px;
+        border-radius: 3px;
+    }
+
+    .vector19 {
+        z-index: 2;
+        height: 10px;
+        width: 32px;
+        left: 60%;
+        bottom: 19px;
+        border-radius: 7px;
+    }
+
+    .vector20 {
+        z-index: 2;
+        height: 30px;
+        width: 53px;
+        right: 28px;
+        top: 28px;
+        border-radius: 0px;
+    }
+
+    .vector21 {
+        z-index: 2;
+        height: 37px;
+        width: 58px;
+        right: 20px;
+        top: 19px;
+        border-radius: 0px;
+    }
+}

@@ -1,0 +1,674 @@
+.invoice-section{
+    padding: 0 12px;
+}
+
+.invoice-main {
+    background: #EEF0F6;
+    border-radius: 10px;
+    margin: auto;
+    padding: 23px;
+
+    .invoice-inner-space {
+        background-color: white;
+        padding: 17px ;
+        border-radius: 5px;
+
+        .fetch-fields-container {
+            margin: 25px 8px 8px 8px;
+            border: 1px solid #B6C2E2;
+            border-radius: 10px;
+            padding: 18px 25px 20px 17px;
+            position: relative;
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+
+            .fetch-fields-title {
+                position: absolute;
+                top: -15px;
+                left: 15px;
+                padding: 0 4px;
+                background-color: white;
+                width: fit-content;
+            }
+
+            .field-item-list {
+                margin: 5px 7px;
+
+                .field-item {
+                    border: 1px solid #B6C2E2;
+                    border-radius: 6px;
+                    margin-right: 7px;
+                    margin-top: 5px;
+                    width: fit-content;
+                    font-size: 14px;
+
+                    .field-name {
+                        padding: 8px 12px;
+                        font-size: 16px;
+                    }
+                }
+
+                .remove-btn {
+                    background-color: white;
+                    border: none;
+                    box-shadow: none;
+                    padding: 8px 0 8px 12px;
+                }
+            }
+
+            .field-select {
+                position: absolute;
+                top: -20px;
+                right: 15px;
+                padding: 0 4px;
+                background-color: white;
+                width: 180px;
+                font-size: 14px;
+            }
+        }
+
+        .upload-container {
+            margin: 5px;
+            .file-upload {
+                position: relative;
+                height: 94px;
+                background-color: #F5F6FB;
+                border: 1px dotted #6ACDB4;
+                border-radius: 10px;
+
+                label {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .file-upload-component {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+
+                    .file-upload-content {
+
+                        .upload_vector_image {
+                            margin-top: 4px;
+                            width: 24px;
+                            height: 16px;
+                            margin-right: 10px;
+                        }
+
+                        .upload-label {
+                            font-size: 14px;
+                            font-weight: 500;
+                            display: block;
+                        }
+
+                        .upload-label-responsive {
+                            display: none;
+                        }
+
+                        .text-description {
+                            font-size: 13px;
+                            margin-left: 10px;
+                            font-weight: 200;
+                            white-space: nowrap;
+                        }
+
+                        @media screen and (max-width: 1284px) {
+                            .upload-label {
+                                display: none;
+                            }
+
+                            .upload-label-responsive {
+                                display: block;
+                            }
+                        }
+
+                        .text-browse {
+                            color: #6378D2;
+                            margin: 0 8px;
+                        }
+                    }
+                }
+
+                .upload-recaptcha-btn {
+                    position: absolute;
+                    right: 10px;
+                    top: calc( 50% - 20px);
+                    cursor: pointer;
+
+                    @media screen and (max-width: 1284px) {
+                        .captcha-img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .fetch-btn-container {
+                padding: 22px;
+                font-family: 'Gilroy';
+
+                .fetch-btn {
+                    border-radius: 10px;
+                    background-color: #3B3C98;
+                    color: white !important;
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                }
+                @media screen and (max-width: 575px) {
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                }
+            }
+
+            .progress-bar-area {
+                padding: 15px 0;
+                font-weight: 500;
+                font-size: 12px;
+                color: #767676;
+
+                .progress-bar-info {
+                    width: calc( 100% - 25px);
+                }
+
+                @media screen and (max-width: 992px) {
+                    .progress-bar-info {
+                        display: none !important;
+                    }
+                }
+
+                .progress {
+                    width: calc( 100% - 20px);
+                    height: 5px;
+                    border-radius: 10px;
+                }
+
+                .refresh-btn {
+                    background-color: white;
+                    width: 20px;
+                    outline: 0;
+                    border: 0;
+                }
+            }
+
+            .progress-bar-area.successed {
+                .description {
+                    color: green;
+                }
+            }
+
+            .progress-bar-area.failed {
+                .description {
+                    color: red;
+                }
+
+                .progress-bar {
+                    background-color: red !important;
+                }
+            }
+        }
+
+        .main-panel {
+
+            .edit-panel {
+                max-height: 580px;
+                margin: 20px -12px;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                .field-item {
+                    margin-top: 9px;
+                    padding-left: 14px;
+                    font-size: 16px;
+
+                    .field-input-box {
+                        input {
+                            border: 1px solid #D0D0DA;
+                            border-radius: 10px;
+                            color: #7D7D85;
+                            padding-left: 20px;
+                        }
+                    }
+
+                    .field-confident {
+                        padding-left: 6px;
+                    }
+                }
+                @media screen and (max-width: 575px) {
+                    justify-content: center;
+                    .field-name {
+                        font-size: 10px !important;
+                        padding: 0 !important;
+                    }
+                    .field-input-box input {
+                        height: 24px !important;
+                        padding-left: 10px !important;
+                    }
+                }
+            }
+
+            .preview-panel {
+                margin-top: 20px;
+                padding-right: 15px;
+
+                .pdf-preview {
+                    max-height: 530px;
+                    min-height: 530px;
+                    height: 100%;
+                    padding: 7px 10px;
+                    background-color: #F5F6FB;
+
+                    .pdf-toolbar {
+                        width: 100%;
+                        height: 37px;
+                        font-size: 11px;
+                        background-color: #F5F6FB;
+
+                        .pdf-btn-group {
+                            padding: 3px;
+
+                            .icon-btn {
+                                background-color: white;
+                                color: black;
+                                border: none;
+                                box-shadow: none;
+                                padding: 2px 7px;
+                                margin: 1px;
+
+                                .sidebar-icon {
+                                    width: 12px;
+                                    margin-bottom: 2px;
+                                }
+                            }
+
+                            .page-btn-group {
+                                width: fit-content;
+                                margin: 0 4px 0 6px;
+                                background-color: white;
+                                border-radius: 5px;
+
+                                .icon-btn {
+                                    background-color: transparent;
+                                    color: #7D7D85;
+                                    border: none;
+                                    box-shadow: none;
+                                    padding: 0 1px;
+
+                                    .sidebar-icon {
+                                        vertical-align: text-bottom;
+                                        margin-bottom: 2px;
+                                    }
+                                }
+
+                                .page-number {
+                                    align-self: center;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            .fit-width-group {
+                                width: fit-content;
+
+                                .fit-width-label {
+                                    align-self: center;
+                                    color: black;
+                                    padding: 0 4px 0 6px;
+                                }
+
+                                .icon-btn {
+                                    background-color: transparent;
+                                    color: black;
+                                    border: none;
+                                    box-shadow: none;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                            }
+
+                            .sidebar-icon {
+                                vertical-align: text-bottom;
+                                margin-bottom: 2px;
+                                width: 11px;
+                            }
+                        }
+                    }
+
+                    .pdf-wrapper {
+                        width: -webkit-fill-available;
+                        height: calc( 100% - 123px );
+                        background-color: #F5F6FB;
+                        overflow: auto;
+
+                        .react-pdf__Page_Document {
+                            background-color: white;
+                        }
+
+                        .react-pdf__Page__annotations.annotationLayer {
+                            padding: 0;
+                        }
+
+                        .react-pdf__Page__canvas {
+                            width: 100%;
+                        }
+
+                        .no-pdf-preview {
+                            width: 100%;
+                            height: 90%;
+                            padding-left: 20%;
+                            padding-right: 20%;
+
+                            .no-pdf-preview-img {
+                                width: 100%;
+                                height: calc(100% - 30px);
+                            }
+
+                            .no-pdf-preview-text {
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 15px;
+                                letter-spacing: 0px;
+                                text-align: center;
+                                margin-top: 10px;
+                                color: #767676;
+                            }
+                            .no-pdf-preview-text:last-child {
+                                margin-top: 0;
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 575px) {
+                        height: auto !important;
+                        min-height: auto !important;
+                        max-height: auto !important;
+                        .pdf-toolbar, .pdf-wrapper {
+                            display: none;
+                        }
+                    }
+
+                    .line-items-list {
+                        font-weight: 500;
+                        text-align: left;
+                        max-height: 120px;
+                        width: auto;
+                        overflow-y: hidden;
+                        background-color: white;
+
+                        .table-responsive {
+
+                            thead {
+                                font-size: 14px;
+
+                            }
+
+                            tbody {
+                                font-size: 12px;
+
+                                tr {
+                                    border: none;
+
+                                    td {
+                                        border: none;
+                                    }
+
+                                    .no-line-items {
+                                        padding: 25px 0;
+                                        vertical-align: middle;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .scrollable.line-items-list {
+                        overflow-y: auto;
+                    }
+                }
+            }
+        }
+
+        .signup-section {
+            margin-top: 20px;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .invoice-inner-space {
+            padding: 0 !important;
+        }
+    }
+}
+
+.invoice-features {
+    position: relative;
+    padding: 68px;
+    margin: auto;
+    overflow: hidden;
+
+    .ellipse33 {
+        position: absolute;
+        width: 358px;
+        height: 716px;
+        right: 0;
+        top: 0;
+        background: #DDF0F6;
+        filter: blur(620px);
+        transform: rotate(141.28deg);
+    }
+
+    .group136 {
+        position: absolute;
+        width: 85px;
+        height: 89px;
+        right: 20px;
+        top: 100px;
+    }
+
+    .feature-title-bar {
+        padding: 60px 0 100px 0;
+
+        .title-top {
+            font-weight: 700;
+            font-size: 20px;
+            color: #3B3C98;
+            letter-spacing: 7.5px;
+        }
+
+        .title-main {
+            font-weight: 700;
+            font-size: 48px;
+            color: #3B3C98;
+        }
+
+        .description {
+            font-weight: 400;
+            font-size: 18px;
+            color: #767676;
+            line-height: 22.5px;
+            margin: auto;
+            padding-top: 15px;
+
+        }
+
+        @media screen and (max-width: 992px) {
+            .title-top {
+                font-size: 16px;
+            }
+
+            .title-main {
+                font-size: 36px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .title-top {
+                font-size: 16px;
+            }
+
+            .title-main {
+                font-size: 26px;
+            }
+        }
+        @media screen and (max-width: 575px) {
+            padding: 0 0 40px 0 !important;
+            .description {
+                font-size: 16px !important;
+            }
+
+            .title-main {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .feature-list {
+        @media screen and (max-width: 575px) {
+            padding: 0 32px;
+        }
+        .feature-item {
+            position: relative;
+
+            .item-background {
+                position: absolute;
+                padding: 33.5px 13px;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+            }
+
+            .Vector46Selected {
+                position: absolute;
+                display: none;
+                padding: 30.5px 0px 3px 0px;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -2;
+            }
+
+            .hover-background {
+                position: absolute;
+                display: none;
+                z-index: -1;
+                bottom: 29px;
+                right: 14px;
+            }
+
+            @media screen and (max-width: 1284px) {
+                .hover-background {
+                    bottom: 29px;
+                    right: 13px;
+                }
+            }
+
+            @media screen and (max-width: 575px) {
+                .hover-background {
+                    bottom: 27px;
+                    right: 12px;
+                }
+
+                .item-content {
+                    padding: 0 !important;
+                }
+            }
+
+            .item-content {
+                padding: 40px 30px 30px 40px;
+                width: 100%;
+                height: 100%;
+
+                .feature-item-title {
+                    font-family: 'Gilroy-SemiBold';
+                    font-size: 20px;
+                    line-height: 125%;
+                    margin: 30px 0 20px 0;
+                }
+
+                .item-description {
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                }
+
+                @media screen and (max-width: 1284px) {
+                    .feature-item-title {
+                        font-size: 16px;
+                    }
+
+                    .item-description {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .feature-item:hover .item-background {
+            display: none;
+        }
+
+        .feature-item:hover .Vector46Selected {
+            display: block !important;
+        }
+
+        .vector50_1_item:hover .hover-background{
+            display: block !important;
+        }
+
+        .vector50_2_item:hover .hover-background{
+            display: block !important;
+        }
+
+        .vector50_3_item:hover .hover-background{
+            display: block !important;
+        }
+
+        .vector50_4_item:hover .hover-background{
+            display: block !important;
+        }
+
+        .vector50_5_item:hover .hover-background{
+            display: block !important;
+        }
+
+        .vector50_6_item:hover .hover-background{
+            display: block !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .invoice-main {
+        margin: 0px;
+    }
+
+    .invoice-features {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .invoice-main {
+        background: white;
+    }
+}
+
+.text-color-green {
+    color: green
+}
+
+.error-alert {
+    font-size: 12px;
+    color: red;
+    text-align: right;
+}
+
+.text-color-red {
+    color: red;
+}
+
+.text-color-green {
+    color: green;
+}

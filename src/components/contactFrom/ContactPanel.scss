@@ -1,0 +1,194 @@
+.contact-panel {
+    background-color: #F8FAFF;
+    border-radius: 25px;
+    padding: 59px 55px;
+
+    .contact-panel-info {
+        padding: 50px;
+
+        .contact-panel-subtitle {
+            font-weight: 400;
+            font-size: 18px;
+            color: #577DF4;
+        }
+
+        .contact-panel-title {
+            margin-top: 13px;
+            font-weight: 700;
+            font-size: 48px;
+            color: #3B3C98;
+            word-break: 2px;
+            @media screen and (max-width:575px) {
+                line-height: 25px;
+                margin-bottom: 50px;
+            }
+        }
+
+        .contact-panel-img-box {
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .contact-panel-title {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-panel-title {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .contact-panel-info-responsive {
+        padding: 50px;
+        display: none;
+        .contact-panel-img-box-responsive {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .contact-form-outer {
+        margin: 100px 0;
+        padding: 50px;
+        height: 100%;
+        @media screen and (max-width: 575px) {
+            padding: 0;
+            box-shadow: 0px 4px 7px #e2e2e8 !important;
+            padding-bottom: 40px !important;
+        }
+
+        .contact-form-main {
+            padding: 35px 36px;
+            background-color: white;
+            @media screen and (max-width:575px) {
+                padding: 0;
+            }
+            .signup-form-input {
+                position: relative;
+                margin-bottom: 25px;
+
+                .input-label {
+                    margin-bottom: 7px;
+                    padding-left: 2px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #000000;
+                }
+
+                .eye-icon {
+                    position: absolute;
+                    top: 41px;
+                    right: 0px;
+                    width: 46px;
+                }
+
+                .message-input {
+                    height: 110px;
+                }
+            }
+
+            .signup-form-captcha {
+                align-items: center;
+                margin-bottom: 25px;
+            }
+
+            @media (max-width: 1228px) {
+                .signup-form-captcha {
+
+                    div {
+                        transform: scale(0.95);
+                        margin-left: -10px;
+                    }
+                }
+            }
+
+            @media (max-width: 768px) {
+                .signup-form-captcha {
+
+                    div {
+                        transform: scale(0.9);
+                        margin-left: -13px;
+                    }
+                }
+            }
+
+            .submit-btn {
+                font-family: 'Gilroy';
+                width: 100%;
+                height: 51px;
+                background: #3B3C98;
+                border-radius: 10px;
+                font-size: 20px;
+                color: #F8F9FB;
+                @media screen and (max-width: 575px) {
+                    height: 35px;
+                    line-height: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        .contact-panel-info {
+            padding-right: 0 !important;
+        }
+
+        .contact-form-outer {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-panel {
+
+        .contact-panel-info{
+            padding: 5px 30px;
+
+            .contact-panel-img-box {
+                display: none;
+            }
+
+            .contact-form-outer {
+                padding: 0 10px 0 22px;
+            }
+        }
+
+        .contact-panel-info-responsive {
+            display: block;
+        }
+
+        .contact-form-outer {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contact-panel{
+        padding: 59px 35px;
+        .contact-panel-info{
+            padding: 0;
+        }
+        .contact-form-outer {
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+        }
+        .contact-panel-info-responsive {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            .contact-panel-img-box-responsive {
+                margin-left: -28px !important;
+                width: calc(100% + 58px) !important;
+            }
+        }
+    }
+}

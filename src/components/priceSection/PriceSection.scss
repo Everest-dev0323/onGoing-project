@@ -1,0 +1,268 @@
+.price-section {
+    position: relative;
+
+    .bgElement {
+        position: absolute;
+        display: block;
+        left: 100px;
+        top: 170px;
+        width: 86%;
+        height: 60%;
+    }
+
+    @media screen and (max-width: 768px) {
+        .bgElement {
+            display: none;
+        }
+    }
+
+    .main-select {
+
+        .price-title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            color: #3B3C98;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            .price-title {
+                font-size: 36px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .price-title {
+                font-size: 24px;
+                padding: 24px;
+                text-align: left;
+            }
+        }
+
+        .price-select {
+            margin: auto;
+            width: 100% !important;
+            margin: 0 !important;
+            padding-left: 18px !important;
+            padding-right: 18px !important;
+            .toggle-switch {
+                box-shadow: 0 2px 0px 1px rgba(0, 0, 255, .1);
+                width: 500px;
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .price-select {
+                padding: 0;
+                margin: 0;
+                margin-left: -20px;
+                overflow: hidden;
+                justify-self: center;
+            }
+            .toggle-switch {
+                box-shadow: 0 2px 0px 1px rgba(0, 0, 255, .1);
+                width: 100% !important;
+            }
+        }
+    }
+
+    .invoice-price {
+        margin: 40px auto;
+        background-color: white;
+        border-radius: 10px;
+        @media screen and (max-width: 575px) {
+            margin-top: 0 !important;
+        }
+
+        .price-setting {
+            padding: 20px 30px;
+
+            .setting-description {
+                margin-top: 50px;
+                font-size: 18px;
+            }
+
+            .option-setting {
+                margin: 30px 0;
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 480px) {
+
+            }
+
+            .page-count-slider {
+
+                // .slider-description {
+                //     font-weight: 700;
+                //     font-size: 32px;
+
+                //     .count {
+                //         margin-left: 7px;
+                //         color: #577DF4 ;
+                //     }
+                // }
+            }
+
+            .url-count-slider {
+                margin-top: 110px;
+
+                // .slider-description {
+                //     font-weight: 700;
+                //     font-size: 32px;
+
+                //     .count {
+                //         margin-left: 7px;
+                //         color: #577DF4 ;
+                //     }
+                // }
+            }
+
+            .api-count-slider {
+                margin-top: 65px;
+
+                // .slider-description {
+                //     font-weight: 700;
+                //     font-size: 32px;
+
+                //     .count {
+                //         margin-left: 7px;
+                //         color: #577DF4 ;
+                //     }
+                // }
+            }
+
+            .slider-description {
+                overflow-wrap: anywhere;
+                font-weight: 700;
+                font-size: 32px;
+
+                .description{
+                    white-space: nowrap;
+                    margin-left: 5px;
+                }
+
+                .count {
+                    margin-left: 7px;
+                    color: #577DF4 ;
+                }
+            }
+
+            @media screen and (max-width: 575px) {
+                .url-count-slider, .api-count-slider {
+                    margin-top: 20px !important;
+                }
+
+                .slider-description {
+                    font-size: 14px;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                .setting-description {
+                    font-size: 16px;
+                }
+
+                .option-setting {
+                    font-size: 16px;
+                }
+
+                .page-count-slider {
+
+                    .slider-description {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .setting-description {
+                    font-size: 11px;
+                }
+
+                .option-setting {
+                    font-size: 11px;
+                }
+
+                .page-count-slider {
+
+                    .slider-description {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 575px) {
+                .setting-description {
+                    display: none !important;
+                }
+            }
+        }
+
+        .price-view {
+            padding: 58px 44px;
+            text-align: center;
+
+            .price-view-subtitle {
+                margin-top: 48px;
+                font-size: 18px;
+            }
+
+            .price-view-price {
+                font-weight: 700;
+                font-size: 96px;
+                color: #FF7D89;
+            }
+
+            .price-view-based {
+                font-size: 16px;
+                color: #8693BC;
+            }
+
+            .price-view-description {
+                margin-top: 35px;
+                padding: 0 30px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #767676;
+            }
+
+            .price-view-button {
+                margin: 40px 30px 50px 30px;
+                padding: 4px 0px 3px 3px;
+                height: 51px;
+                background: #3B3C98;
+                border-radius: 10px;
+                font-size: 20px;
+                color: #F8F9FB;
+            }
+
+            @media screen and (max-width: 1280px) {
+                .price-view-price {
+                    font-weight: 700;
+                    font-size: 64px;
+                    color: #FF7D89;
+                }
+                .price-view-button, .price-view-description {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            .price-setting {
+                padding: 12px !important;
+            }
+            .price-view {
+                padding: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bgElement {
+        display: none;
+    }
+}

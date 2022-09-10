@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+    padding: 0 65px;
+    background-color: #1A1B7C;
+    color: white;
+
+    .footer-info {
+
+        .copyright-icon {
+            margin-bottom: 4px;
+        }
+
+        span, a {
+            margin: 0 35px 0 3px;
+            white-space: nowrap;
+        }
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .footer-logo-box {
+        padding: 14px 0 14px 10px;
+    }
+
+    .footer-logo {
+        padding-bottom: 6px !important;
+        float: right;
+        margin-right: 0 !important;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .footer {
+        .footer-logo {
+            float: left !important;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        padding: 24px 24px 12px 24px !important;
+    }
+}
