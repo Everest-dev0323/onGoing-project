@@ -12,9 +12,8 @@ export const App = () => (
   <Provider store={createAppStore()}>
     <Header />
     <Container fluid>
-      <Routes>        
-        <Route path='/home' element={<Home />} exact={true} />
-        <Route path="/" element={<Navigate replace to="/home" />} />         
+      <Routes>
+        <Route path='/' element={<Home />} exact={true} />
       </Routes>
     </Container>
     <Footer />

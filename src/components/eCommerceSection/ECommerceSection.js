@@ -14,10 +14,10 @@ import './ECommerceSection.scss';
 
 const fileTypes = ['pdf'];
 
-const ECommerceSection = () => { 
+const ECommerceSection = () => {
     const recaptchaRef = useRef();
     const [fetched, setFetched] = useState(false);
-    const [ecommerceURL, setEcommerceURL] = useState(''); 
+    const [ecommerceURL, setEcommerceURL] = useState('');
 
     const onChange = (e) => {
         recaptchaRef.current.execute();
@@ -38,22 +38,22 @@ const ECommerceSection = () => {
                 <div className="ecommerce-inner-space">
                     <Row className='fetch-container'>
                         <Col sm={7} md={8} lg={9} xl={10} className="d-flex flex-row align-items-center url-fetch">
-                            <input 
-                                type="text" 
-                                name="url" 
+                            <input
+                                type="text"
+                                name="url"
                                 value={ecommerceURL}
                                 onChange={onChange}
                                 className="url-input"
                                 placeholder="Enter an product page url to see how Fetchie extracts In-fur-mation."
-                                id="url" 
+                                id="url"
                             />
                             <img src={CaptchaImg} alt="reCAPTCHA symbol" />
-                            {/* <ReCAPTCHA
+                            <ReCAPTCHA
                                 ref={recaptchaRef}
                                 sitekey="6LdrSaQgAAAAAFSDlKUqekGLo9JNGfgPuRi55MEg"
                                 size="invisible"
                                 onChange={onRecaptcha}
-                            /> */}
+                            />
                         </Col>
                         <Col sm={5} md={4} lg={3} xl={2} className="fetch-btn-container">
                             <Button className="fetch-btn" onClick={clickFetch}>Fetch</Button>
@@ -86,8 +86,8 @@ const ECommerceSection = () => {
                             </>
                             : <div className="no-preview">
                                 <img className="no-preview-img" src={NoPriview} alt="no preview"/>
-                                <div className="text-center no-preview-text">Upload an invoice to see how Fetchie</div>
-                                <div className="text-center no-preview-text">extracts In-fur-mation.</div>
+                                <div className="text-center no-preview-text">Enter an product page url to see how</div>
+                                <div className="text-center no-preview-text">Fetchie extracts In-fur-mation.</div>
                             </div>
                         }
                     </Row>
@@ -102,8 +102,8 @@ const ECommerceSection = () => {
                 <ECommerceFeatures />
             </Col>
         </Row>
-        
-    )    
+
+    )
 };
 
 export { ECommerceSection };

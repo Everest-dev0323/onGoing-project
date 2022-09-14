@@ -23,7 +23,7 @@ const InvoicePrice = ({}) => {
     useEffect(() => {
         setTotalPrice(processedPageCountPerMonth);
     }, [isChecked2, isChecked3])
-    
+
     const setValue = (val) => {
         if(val >= 10000) setStep(10000)
         else if(val >= 1000 && val < 10000) setStep(1000)
@@ -51,29 +51,29 @@ const InvoicePrice = ({}) => {
                     <div>(You can choose more than one).</div>
                 </div>
                 <div className="option-setting">
-                    <div className="d-flex flex-row">
+                    <div className="d-flex flex-row flex-wrap">
                         <ButtonCheckBox
-                            icon={icon1} 
-                            iconChecked={iconChecked1} 
+                            icon={icon1}
+                            iconChecked={iconChecked1}
                             label="Basic Fields"
                             isChecked={isChecked1}
                             onChange={() => setIsChecked1(true)}
                         />
                         <ButtonCheckBox
-                            icon={icon2} 
-                            iconChecked={iconChecked2} 
+                            icon={icon2}
+                            iconChecked={iconChecked2}
                             label="Line item Extraction"
                             isChecked={isChecked2}
-                            onChange={(val) => processedPageCountPerMonth !== 100 && setIsChecked2(val) }
+                            onChange={(val) => setIsChecked2(val) }
                         />
-                    </div>
-                    <ButtonCheckBox
-                            icon={icon3} 
-                            iconChecked={iconChecked3} 
+                        <ButtonCheckBox
+                            icon={icon3}
+                            iconChecked={iconChecked3}
                             label="Advanced ML"
                             isChecked={isChecked3}
-                            onChange={(val) => processedPageCountPerMonth !== 100 && setIsChecked3(val)}
+                            onChange={(val) => setIsChecked3(val)}
                         />
+                    </div>
                 </div>
                 <div className="page-count-slider">
                     <div className=" slider-description">
@@ -81,11 +81,11 @@ const InvoicePrice = ({}) => {
                         <span className="description">Processed/per month<span className="count">{processedPageCountPerMonth}</span></span>
                     </div>
                     <div className="slider-panel">
-                        <CustomSlider 
-                            value={processedPageCountPerMonth} 
+                        <CustomSlider
+                            value={processedPageCountPerMonth}
                             setValue={setValue}
                             min={0}
-                            max={100000}
+                            max={10000}
                             step={step}
                         />
                     </div>

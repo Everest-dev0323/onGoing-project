@@ -22,7 +22,7 @@ const ECommerceFeatures = ({ }) => {
             <Row className="text-center feature-title-bar">
                 <Col md={12} className="title-top">FEATURES</Col>
                 <Col md={12} className="title-main">Fetchie for eCommerce</Col>
-                <Col md={8} sm={12} className="align-center description"> 
+                <Col md={8} sm={12} className="align-center description">
                     Fetchie is your new eCommerce price finding best friend. Fetchie uses his advance web scrapping technology to seek out updates on items you are monitoring across the web. Good boy Fetchie, you found us a completive advantage!
                 </Col>
             </Row>
@@ -39,7 +39,7 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             Fetchie has an advanced pet-degree in artificial intelligence, machine learning, and cognitive capture, the paw-fect skills needed to extract key fields and line items from invoices.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item vector50_2_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
@@ -53,7 +53,7 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             No puppy training is required, Fetchie is ready to capture data without any template configuration.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item vector50_3_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
@@ -67,7 +67,7 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             Everything is paw-sible with Fetchie, we support data extraction from images captured by smartphones, scanned documents, and PDFs.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_4_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
@@ -80,9 +80,9 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             Forward your supplier emails with the attached invoices, and Fetchie will bring back all the invoice information including SKU level line items.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
-                <Col lg={4} md={6} sm={12} xs={12} className="feature-item  vector50_5_item">
+                <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_5_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
                     <img className="Vector46Selected" src={Vector46Selected} alt="Vector46Selected" />
                     <img className="hover-background vector50_5" src={Vector50_5} alt="Vector50_5" />
@@ -94,7 +94,7 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             Go mutts with data extraction configuration rules, use our industry best practice rules engine or enable & disable the data formats you pre-fur.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_6_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
@@ -108,7 +108,7 @@ const ECommerceFeatures = ({ }) => {
                         <div className="item-description">
                             You won’t be barking up the wrong tree with Fetchie, use a secure API for your business application, or we can deliver your processed invoices using a configurable webhook.
                         </div>
-                    </div>                    
+                    </div>
                 </Col>
             </Row>
         </>

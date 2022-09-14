@@ -100,6 +100,7 @@ const InvoiceFeatures = ({ }) => {
                 <Col lg={4} md={6} sm={6} xs={12} className="feature-item  vector50_6_item">
                     <img className="item-background" src={Vector46} alt="Vector46" />
                     <img className="hover-background vector50_6" src={Vector46} alt="Vector50_6" />
+                    <img className="hover-background vector50_6" src={Vector50_6} alt="Vector50_6" />
                     <div className="item-content">
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <span className="feature-item-title">API & Webhooks</span>

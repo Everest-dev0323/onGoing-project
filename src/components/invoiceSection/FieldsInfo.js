@@ -20,10 +20,10 @@ const FieldsInfo = ({updatedFields, fetchSuccessed, /*fieldChange*/ }) => {
                             item.required === "true"
                                 ? <Row className="align-items-center flex-row field-item" key={index}>
                                     <Col md={4} sm={4} xs={4} className="field-name">{ item.Field.DisplayName }</Col>
-                                    <Col md={6} sm={6} xs={6} className="field-input-box">
+                                    <Col md={7} sm={7} xs={7} className="field-input-box">
                                         <input
-                                            className="form-control" 
-                                            type="text" 
+                                            className="form-control"
+                                            type="text"
                                             name={ item.Field.FieldName }
                                             value={ item.input }
                                             onChange={onChange}
@@ -31,9 +31,9 @@ const FieldsInfo = ({updatedFields, fetchSuccessed, /*fieldChange*/ }) => {
                                             id={ item.Field.FieldName }
                                         />
                                     </Col>
-                                    <Col md={2} sm={2} xs={2} className="field-confident">
+                                    <Col md={1} sm={1} xs={1} className="field-confident">
                                         {
-                                            item.confident === "true" 
+                                            item.confident === "true"
                                                 ? (fetchSuccessed ? <img src={BlueEllipse} alt="Confident"/> : <img src={MarkHighDisabled} alt="Confident"/>)
                                                 : (fetchSuccessed ? <img src={RedEllipse} alt="Not confident"/> : <img src={MarkLowDisabled} alt="Not Confident"/>)
                                         }

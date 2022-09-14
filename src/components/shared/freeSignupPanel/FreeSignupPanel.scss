@@ -12,7 +12,7 @@
     }
 
     .signup-info {
-        padding: 15px 0px 15px 30px;
+        padding: 40px 0px 40px 60px;
         z-index: 2;
         color: white;
         background-color: transparent;
@@ -28,6 +28,7 @@
         }
 
         @media screen and (max-width: 992px) {
+            padding: 20px 0px 20px 40px;
             .signup-description {
                 font-size: 16px;
             }
@@ -35,6 +36,10 @@
             .signup-description-2 {
                 font-size: 12px;
             }
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 20px 0px 0px 25px;
         }
     }
 
