@@ -98,8 +98,8 @@ const PDFPreview = ({fetchedFile, lineItems}) => {
                         </Document>
                         : <div className="no-pdf-preview">
                             <img className="no-pdf-preview-img" src={NoPDFPriview} alt="no preview"/>
-                            <div className="text-center no-pdf-preview-text">Enter an product page url to see how</div>
-                            <div className="text-center no-pdf-preview-text">Fetchie extracts In-fur-mation.</div>
+                            <div className="text-center no-pdf-preview-text">Upload an invoice to see how Fetchie</div>
+                            <div className="text-center no-pdf-preview-text">extracts In-fur-mation.</div>
                         </div>
                     }
                 </div>

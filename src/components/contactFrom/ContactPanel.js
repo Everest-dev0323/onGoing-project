@@ -24,7 +24,7 @@ const ContactPanel = ({}) => {
         }));
     }
 
-    const handleChange = () => (e) => {
+    const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
         setQuery((prevState) => ({
@@ -66,7 +66,7 @@ const ContactPanel = ({}) => {
                             placeholder="Enter your name"
                             id="name"
                         />
-                        <img className="eye-icon" src={EyeImg} alt="EyeImg"/>
+                        {/* <img className="eye-icon" src={EyeImg} alt="EyeImg"/> */}
                     </Row>
                     <Row className="signup-form-input">
                         <div className="input-label">Email</div>
@@ -79,7 +79,7 @@ const ContactPanel = ({}) => {
                             placeholder="Enter your email"
                             id="email"
                         />
-                        <img className="eye-icon" src={EyeImg} alt="EyeImg"/>
+                        {/* <img className="eye-icon" src={EyeImg} alt="EyeImg"/> */}
                     </Row>
                     <Row className="signup-form-input">
                         <div className="input-label">Message</div>
@@ -92,7 +92,7 @@ const ContactPanel = ({}) => {
                             placeholder="Write your message"
                             id="message"
                         />
-                        <img className="eye-icon" src={EyeImg} alt="EyeImg"/>
+                        {/* <img className="eye-icon" src={EyeImg} alt="EyeImg"/> */}
                     </Row>
                     <Row className="signup-form-captcha">
                         <ReCAPTCHA

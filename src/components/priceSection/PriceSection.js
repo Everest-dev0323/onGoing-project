@@ -17,7 +17,7 @@ const PriceSection = ({isInvoicesPrice, selectPrice}) => {
 
     return (
         <div className="price-section">
-            {status&&<img className="z-index--2 bgElement" src={BgElement} alt="BgElement"/>}
+            {<img className="z-index--2 bgElement" src={BgElement} alt="BgElement"/>}
             <Row className="text-center main-select justify-content-center">
                 <div md={12} className="price-title">Simple, ComPETitive Pricing</div>
                 <div className="price-select">

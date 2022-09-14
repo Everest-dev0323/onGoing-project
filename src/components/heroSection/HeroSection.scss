@@ -71,9 +71,12 @@
             }
 
             .fetchie-explanation {
-                font-size: 14px;
+                font-size: 16px;
                 padding: 5px;
                 text-align: center;
+                @media screen and (max-width:576px) {
+                    font-size: 14px !important;
+                }
             }
 
             .read-more {
