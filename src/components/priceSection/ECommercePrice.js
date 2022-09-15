@@ -25,7 +25,7 @@ const ECommercePrice = ({}) => {
   };
 
   const setTotalPrice = (URLCount, APICount) => {
-    let temp = Math.ceil(24.99 + URLCount * 0.01 + APICount * 0.1);
+    let temp = Math.ceil(24.9 + URLCount * 0.01 + APICount * 0.1);
     if (URLCount <= 1000) setPrice("Free");
     else if (URLCount >= 100000) setPrice("Enquiry");
     else setPrice("$" + temp);
