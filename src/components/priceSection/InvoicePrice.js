@@ -70,7 +70,9 @@ const InvoicePrice = ({}) => {
               iconChecked={iconChecked3}
               label="Advanced ML"
               isChecked={isChecked3}
-              onChange={(val) => setIsChecked3(val)}
+              onChange={(val) =>
+                processedPageCountPerMonth != 100 && setIsChecked3(val)
+              }
             />
           </div>
         </div>
