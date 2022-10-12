@@ -25,7 +25,7 @@ import './InvoiceSection.scss';
 
 const fileTypes = ['pdf'];
 
-const InvoiceSection = () => { 
+const InvoiceSection = () => {
     const [updatedFields, setUpdatedFields] = useState([])
     const [lineItems, setLineItems] = useState([])
 
@@ -38,7 +38,7 @@ const InvoiceSection = () => {
     const [isProgressing, setIsProgressing] = useState(false);
     const [fetchSuccessed, setFetchSuccessed] = useState(0) //0-null, 1-successed, 2-failed
     const [progressDescription, setProgressDescription] = useState("Fetchie is now EmBARKing on extraction, waiting for conFURmation.")
-    const [fetchedFile, setFetchedFile] = useState(null); 
+    const [fetchedFile, setFetchedFile] = useState(null);
 
     const recaptchaRef = useRef();
 
@@ -67,7 +67,7 @@ const InvoiceSection = () => {
             } else {
                 // addToast(res.message, {appearance: 'error', autoDismiss: true});
             }
-            
+
         }).catch(error => {
             console.log('error', error)
             // addToast('failed', {appearance: 'error', autoDismiss: true});
@@ -82,7 +82,7 @@ const InvoiceSection = () => {
             } else {
                 // addToast(res.message, {appearance: 'error', autoDismiss: true});
             }
-            
+
         }).catch(error => {
             console.log('fetch error', error)
             // addToast('failed', {appearance: 'error', autoDismiss: true});
@@ -142,7 +142,7 @@ const InvoiceSection = () => {
                 result.label = _setFieldLabel(result)
 
                 return result;
-            })      
+            })
         )
     }
 
@@ -160,7 +160,7 @@ const InvoiceSection = () => {
                 result.value = item.value;
                 result.required = item.required;
                 result.label = _setFieldLabel(result)
-                
+
                 return result;
             })
         )
@@ -200,7 +200,7 @@ const InvoiceSection = () => {
                 } else {
                     // addToast(res.message, {appearance: 'error', autoDismiss: true});
                 }
-                
+
             }).catch(error => {
                 console.log('fetch error', error)
                 // addToast('failed', {appearance: 'error', autoDismiss: true});
@@ -224,8 +224,8 @@ const InvoiceSection = () => {
                             <FileUploader
                                 handleChange={uploadFile}
                                 name="file"
-                                multiple={false} 
-                                types={fileTypes} 
+                                multiple={false}
+                                types={fileTypes}
                                 maxSize={2}
                                 onTypeError={onUploadError}
                                 onSizeError={onUploadError}
@@ -234,10 +234,10 @@ const InvoiceSection = () => {
                                         <div className="d-flex flex-row align-items-center file-upload-content">
                                             <img className="upload_vector_image" src={UploadVector} alt="upload vector"/>
                                             {
-                                                !upload.error ? ( !upload.file 
+                                                !upload.error ? ( !upload.file
                                                         ? <div>
                                                             <p className="upload-label">
-                                                                Drag file to upload, or 
+                                                                Drag file to upload, or
                                                                 <span className="text-browse">Browse</span>
                                                                 <span className="text-description">Supports .pdf  (less than 2 MB)</span>
                                                             </p>
@@ -255,22 +255,22 @@ const InvoiceSection = () => {
                             />
                             <div className="upload-recaptcha-btn" onClick={(e) => reCAPTCHA(e)}>
                                 <img className="captcha-img" src={CaptchaImg} alt="CaptchaImg" />
-                                {/* <ReCAPTCHA
+                                <ReCAPTCHA
                                     ref={recaptchaRef}
                                     sitekey="6LdrSaQgAAAAAFSDlKUqekGLo9JNGfgPuRi55MEg"
                                     size="invisible"
                                     onChange={onRecaptcha}
-                                /> */}
+                                />
                             </div>
                         </Col>
                         <Col sm={12} md={4} lg={3} xl={2} className="fetch-btn-container">
                             <Button className="fetch-btn" onClick={clickFetch}>Fetch</Button>
                         </Col>
-                        <Col 
-                            sm={12} 
+                        <Col
+                            sm={12}
                             className={
-                                (isProgressing ? "d-block" : "d-none") + 
-                                (fetchSuccessed == 1 ? " successed" : (fetchSuccessed == 2 ? " failed" : "")) + 
+                                (isProgressing ? "d-block" : "d-none") +
+                                (fetchSuccessed == 1 ? " successed" : (fetchSuccessed == 2 ? " failed" : "")) +
                                 " progress-bar-area"
                             }
                         >
@@ -280,9 +280,9 @@ const InvoiceSection = () => {
                                     <div><span className="mx-4">{ upload.file && upload.file.name }</span><span>{ upload.file && (Math.floor(upload.file.size / 1000) + "kb")}</span></div>
                                 </div>
                                 <div className="d-flex flex-row align-items-center">
-                                    <ProgressBar 
+                                    <ProgressBar
                                         variant={fetchSuccessed == 2 ? "danger" : "success"}
-                                        now={currentProgress} 
+                                        now={currentProgress}
                                     />
                                     <Button className="refresh-btn" onClick={clickRefresh}>
                                         <img className="refresh_img" src={RefreshImg} alt="RefreshImg"/>
@@ -310,8 +310,8 @@ const InvoiceSection = () => {
                 <InvoiceFeatures />
             </Col>
         </Row>
-        
-    )    
+
+    )
 };
 
 export { InvoiceSection };

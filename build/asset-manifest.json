@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e6616bc.chunk.css",
-    "main.js": "/static/js/main.876eadb9.chunk.js",
-    "main.js.map": "/static/js/main.876eadb9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.dc6a0751.js",
-    "runtime-main.js.map": "/static/js/runtime-main.dc6a0751.js.map",
+    "main.css": "/static/css/main.6ac4a911.chunk.css",
+    "main.js": "/static/js/main.04fcc4e2.chunk.js",
+    "main.js.map": "/static/js/main.04fcc4e2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bb2ca27c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bb2ca27c.js.map",
     "static/css/2.67dac41f.chunk.css": "/static/css/2.67dac41f.chunk.css",
-    "static/js/2.dfc9ca79.chunk.js": "/static/js/2.dfc9ca79.chunk.js",
-    "static/js/2.dfc9ca79.chunk.js.map": "/static/js/2.dfc9ca79.chunk.js.map",
-    "static/js/3.3e494f61.chunk.js": "/static/js/3.3e494f61.chunk.js",
-    "static/js/3.3e494f61.chunk.js.map": "/static/js/3.3e494f61.chunk.js.map",
+    "static/js/2.b2a45f3a.chunk.js": "/static/js/2.b2a45f3a.chunk.js",
+    "static/js/2.b2a45f3a.chunk.js.map": "/static/js/2.b2a45f3a.chunk.js.map",
+    "static/js/3.43feb6c2.chunk.js": "/static/js/3.43feb6c2.chunk.js",
+    "static/js/3.43feb6c2.chunk.js.map": "/static/js/3.43feb6c2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.67dac41f.chunk.css.map": "/static/css/2.67dac41f.chunk.css.map",
-    "static/css/main.8e6616bc.chunk.css.map": "/static/css/main.8e6616bc.chunk.css.map",
-    "static/js/2.dfc9ca79.chunk.js.LICENSE.txt": "/static/js/2.dfc9ca79.chunk.js.LICENSE.txt",
-    "static/js/3.3e494f61.chunk.js.LICENSE.txt": "/static/js/3.3e494f61.chunk.js.LICENSE.txt",
+    "static/css/main.6ac4a911.chunk.css.map": "/static/css/main.6ac4a911.chunk.css.map",
+    "static/js/2.b2a45f3a.chunk.js.LICENSE.txt": "/static/js/2.b2a45f3a.chunk.js.LICENSE.txt",
+    "static/js/3.43feb6c2.chunk.js.LICENSE.txt": "/static/js/3.43feb6c2.chunk.js.LICENSE.txt",
     "static/media/Ellipse-24.6c5dc5a9.png": "/static/media/Ellipse-24.6c5dc5a9.png",
     "static/media/Ellipse-33.c2263ce8.png": "/static/media/Ellipse-33.c2263ce8.png",
     "static/media/App.scss": "/static/media/Lato-Regular.9d883d54.ttf",
@@ -38,10 +38,10 @@
     "static/media/icon1-3.bca46f80.svg": "/static/media/icon1-3.bca46f80.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.dc6a0751.js",
+    "static/js/runtime-main.bb2ca27c.js",
     "static/css/2.67dac41f.chunk.css",
-    "static/js/2.dfc9ca79.chunk.js",
-    "static/css/main.8e6616bc.chunk.css",
-    "static/js/main.876eadb9.chunk.js"
+    "static/js/2.b2a45f3a.chunk.js",
+    "static/css/main.6ac4a911.chunk.css",
+    "static/js/main.04fcc4e2.chunk.js"
   ]
 }
